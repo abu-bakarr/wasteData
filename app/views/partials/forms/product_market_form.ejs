@@ -1,0 +1,62 @@
+<!-- product market page -->
+<section class="section product_market_section hide-on-large-only">
+    <!-- <div class="divider"></div> -->
+    <form method="POST" action="/inputMarketData" id="productMarketForm">
+        <div class="row center">
+            <!-- capturing the data -->
+            <div class="col s12">
+                <h4 class="center green-text text-darken-1">Waste Data Collection</h4>
+                <small class="center green-text text-darken-1">Please fill in the form</small>
+                <div class="submitAlert">
+                    <p>Success: Your data has been sent</p>
+                </div>
+                <div class="errorAlert">
+                    <p>Error: All fields requires input</p>
+                </div>
+                <div class="container">
+                    <ul class="collapsible">
+                        <!-- Market Location Information -->
+                        <li class="active">
+                            <div class="collapsible-header">Waste Data</div>
+                            <div class="collapsible-body">
+                                <div class="input-field">
+                                    <label for="senderName">Sender Name</label>
+                                    <input type="text" name="senderName" id="senderName" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="community">Community</label>
+                                    <input type="text" name="community" id="community" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="ward">Ward</label>
+                                    <input type="number" name="ward" id="ward" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="constituency">Constituency</label>
+                                    <input type="number" name="constituency" id="constituency" required>
+                                </div>
+                                <div class="input-field">
+                                    <label for="westType">Waste Type</label>
+                                    <input type="text" name="westType" id="westType" required>
+                                </div>
+                                <div class="file-field">
+                                    <div class="btn">
+                                        <span>Upload Photo</span>
+                                        <input type="file" id="uploadedFile" name="uploadedFile">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text">
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <label for="mktDate">Date</label>
+                                    <input type="text" name="mktDate" class="datepicker" id="mktDate" required>
+                                </div>
+
+                    </ul>
+                    <input class="btn btn-small btn-extend blue lighten-2 white-text" id="btn-new-mktData" type="submit" value="send">
+                    </div>
+                </div>
+            </div>
+    </form>
+</section>
